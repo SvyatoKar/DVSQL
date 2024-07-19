@@ -1,0 +1,46 @@
+/* app.component.css */
+
+.table {
+    font-size: 0.875rem; /* Riduci la dimensione del testo nella tabella */
+  }
+  
+  pre {
+    white-space: pre-wrap; /* Mantiene la formattazione del testo */
+    background-color: #f8f9fa; /* Colore di sfondo per una migliore leggibilità */
+    border: 1px solid #ddd; /* Aggiungi un bordo sottile */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.875rem; /* Riduci la dimensione del testo */
+  }
+  .scrollable-content {
+    max-height: 400px; /* Imposta un'altezza fissa. Puoi modificarla a piacere */
+    overflow-y: auto;  /* Abilita lo scroll verticale */
+  }
+  
+  .sql-code {
+    font-family: monospace;
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    max-height: 400px; /* Imposta un'altezza fissa. Puoi modificarla a piacere */
+    overflow-y: auto;  /* Abilita lo scroll verticale */
+  }
+  .fixed-height {
+    height: 400px; /* Imposta l'altezza fissa che desideri */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Abilita lo scroll verticale se il contenuto supera l'altezza */
+    position: relative; /* Permette il posizionamento assoluto del pulsante */
+  }
+
+.btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra il pulsante orizzontalmente */
+    width: 100%; /* Occupa tutta la larghezza del contenitore */
+    background-color: #f8f9fa; /* Facoltativo: per garantire che il pulsante non si sovrapponga al contenuto */
+    padding: 10px; /* Facoltativo: per spazio attorno al pulsante */
+  }

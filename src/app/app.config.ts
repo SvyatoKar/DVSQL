@@ -1,9 +1,12 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+// src/app/app.config.ts
 import { provideRouter } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
-import { routes } from './app.routes';
-import { provideClientHydration } from '@angular/platform-browser';
-
-export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration()]
+export const appConfig = {
+  providers: [
+    provideRouter([]) // Inserisci le tue rotte qui se necessario
+  ],
+  imports: [
+    RouterModule
+  ]
 };
