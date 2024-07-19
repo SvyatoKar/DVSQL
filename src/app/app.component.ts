@@ -95,6 +95,6 @@ UPDATE VSMADM.POK SET PK_SCANN_USER = '', PK_VGNR = 0, PK_STATUS_CD = '1', PK_VG
     document.body.removeChild(textArea);
 
     // Facoltativo: mostra un messaggio di conferma
-    alert('Testo copiato negli appunti!');
+    alert('Text in die Zwischenablage kopiert!');
 }
 }
